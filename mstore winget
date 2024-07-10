@@ -1,0 +1,21 @@
+- Microsoft Apps Store : 
+https://apps.microsoft.com/store/apps
+
+- Store.rg-adguard.net
+https://store.rg-adguard.net/
+
+irm "PasteUrlLinkDariAdguard" -o namaPackage.appx
+Add-AppxPackage .\namaPackage.appx
+
+
+Command Remove Apps:
+- Get-AppxPackage -Alluser | Select Name, PackageFullName
+- Remove-AppxPackage -Package PackageFullname
+
+Command Install Winget
+- Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+- Install-Script -Name winget-install -Force
+- winget-install.ps1
+- Set-ExecutionPolicy Unrestricted -Force
+
+---------------------------------
