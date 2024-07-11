@@ -1,0 +1,4 @@
+===========Tweak Windows 10 Atau 11===========
+From an Elevated (Run as Administrator) PowerShell prompt:
+
+iwr -useb https://christitus.com/win | iex
